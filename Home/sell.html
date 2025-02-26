@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell on Quickdealzz</title>
+    <link rel="stylesheet" href="../styles/sell.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/logo.png" alt="Quickdealzz"></a>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search for products, brands and more">
+        <div class="nav-buttons">
+            <button class="login" onclick="location.href='login.html'">Login</button>
+            <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+            <button class="sell active" onclick="location.href='sell.html'">Sell</button>
+        </div>
+    </header>
+    
+    <nav class="categories">
+        <a href="electronics.html">Electronics</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="sports.html">Sports</a>
+        <a href="books.html">Books</a>
+    </nav>
+
+    <section class="sell-form">
+        <h2>Sell Your Product</h2>
+        <form action="submit_listing.php" method="post" enctype="multipart/form-data">
+            <label for="product-title">Product Title:</label>
+            <input type="text" id="product-title" name="product-title" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="furniture">Furniture</option>
+                <option value="vehicles">Vehicles</option>
+                <option value="sports">Sports</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="price">Price (₹):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition" required>
+                <option value="new">New</option>
+                <option value="used">Used</option>
+                <option value="old">Old</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="images">Upload Images:</label>
+            <input type="file" id="images" name="images" accept="image/*" multiple required>
+
+            <button type="submit" class="submit-btn">Post Listing</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Quickdealzz. All rights reserved.</p>
+    </footer>
+    <script src="../scripts/sell.js"></script>
+</body>
+</html>

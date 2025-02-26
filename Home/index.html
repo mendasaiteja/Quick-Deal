@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/home.css" />
+  </head>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <body>
+    <div class="nav-bar">
+      <div class="image">
+        <a href="./index.html"> <img src="../img/logo.png" /></a>
+      </div>
+
+      <input type="text" placeholder="Search" class="search-bar" />
+
+      <div class="sign-in"">
+        <button
+          class="sign-in" style="cursor: pointer;"
+          onclick="window.location.href='../Register/login.html'"
+        >
+       Sign in
+        </button>
+        <button
+          class="sign-up "style="cursor: pointer;"
+          onclick="window.location.href='../Register/signup.html'"
+        >
+          Sign up
+        </button>
+        <button class="sell" onclick="location.href='sell.html'">Sell</button>
+      </div>
+    </div>
+    <div class="categories">
+      <div class="data">
+        <div class="items">
+          <a href="Furniture.html">Furniture</a>
+          <a href="electronics.html">Electronics</a>
+          <a href="vehicles.html">Vehicals</a>
+        </div>
+        <div class="category">
+          <select id="categorySelect" onchange="navigateToPage(this.value)">
+            <option value="">New Category</option>
+            <option value="OldItems.html">Old Category</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section class="banner">
+      <img src="../img/banner.jpg" alt="Sale Banner">
+  </section>
+  <marquee direction="right" scrollamount="12">🚀 New Arrivals Every Day! Check out the latest deals on Quickdealzz! 🚀   🚀 New Arrivals Every Day! Check out the latest deals on Quickdealzz! 🚀   🚀 New Arrivals Every Day! Check out the latest deals on Quickdealzz! 🚀        🚀 New Arrivals Every Day! Check out the latest deals on Quickdealzz! 🚀</marquee>
+    <div>
+      <h1 style="text-align: center; color: rgb(195, 111, 9)">
+        Recommended Products
+      </h1>
+    </div>
+    <div class="recomendation">
+      <div class="box">
+        <span class="tag new">New</span>
+        <img src="../img/mobile.png" />
+        <a href="#">Iphone 16</a>
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP1.html" class="description">Know More</a>
+      </div>
+      <div class="box">
+        <span class="tag used">Used 2Y 6M</span>
+        <img src="../img/laptop.png" />
+        <a href="#" style="margin-top: 10px">Asus Tuf</a>
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP2.html" class="description">Know More</a>
+      </div>
+      <div class="box">
+        <span class="tag old">Used 1yr</span>
+        <img src="../img/sofa.png" />
+        <a href="#"> Henry 2 Seater Sofa</a>
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP5.html" class="description">Know More</a>
+      </div>
+      <div class="box">
+        <span class="tag new">New</span>
+        <img src="../img/camera.png" />
+        <a href="#">camera</a>
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP3.html" class="description">Know More</a>
+      </div>
+      <div class="box">
+        <span class="tag used">Used 3Y</span>
+        <img src="../img/tv.png" />
+        <a 
+          >Xiaomi 108 cm A Pro 4K Dolby Vision Smart Google TV L43MA-AUIN
+          (Black)</a
+        >
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP4.html" href="#" class="description">Know More</a>
+      </div>
+      <div class="box">
+        <span class="tag new">New</span>
+        <img src="../img/scooty.png" />
+        <a href="#">TVS Jupiter</a>
+        <h1>Rs:65000</h1>
+        <a href="../descriptions/FP6.html" class="description">Know More</a>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 QuickDealzz. All rights reserved.</p>
+    </footer>
+    <script src="../scripts/script.js"> 
+     
+    </script>    
+  </body>
+</html>
